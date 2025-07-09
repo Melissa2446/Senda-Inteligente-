@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senda Inteligente - Bastón para Personas con Discapacidad Visual</title>
+    <!-- Incluye Tailwind CSS desde su CDN para un estilizado rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Enlace a la fuente Inter de Google Fonts para una tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales del cuerpo de la página */
+        body {
+            font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+            background-color: #F8F8F8; /* Color de fondo suave */
+            color: #333; /* Color de texto principal */
+        }
+        /* Contenedor principal para centrar el contenido y aplicar padding */
+        .container {
+            max-width: 1200px; /* Ancho máximo del contenedor */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            padding: 2rem; /* Espaciado interno */
+        }
+        /* Estilo para los títulos de sección */
+        .section-title {
+            font-size: 2.5rem; /* Tamaño de fuente grande */
+            font-weight: 700; /* Negrita */
+            color: #1a202c; /* Color de texto oscuro */
+            margin-bottom: 2rem; /* Margen inferior */
+            text-align: center; /* Centra el texto */
+            position: relative; /* Necesario para el pseudo-elemento after */
+        }
+        /* Pseudo-elemento para el subrayado decorativo de los títulos de sección */
+        .section-title::after {
+            content: ''; /* Contenido vacío para el pseudo-elemento */
+            display: block; /* Hace que ocupe toda la línea */
+            width: 80px; /* Ancho del subrayado */
+            height: 4px; /* Altura del subrayado */
+            background-color: #6484ef; /* Color azul del subrayado */
+            margin: 0.75rem auto 0; /* Centra el subrayado y añade margen */
+            border-radius: 2px; /* Bordes redondeados */
+        }
+        /* Estilo para las tarjetas de contenido */
+        .card {
+            background-color: #ffffff; /* Fondo blanco */
+            border-radius: 1rem; /* Bordes redondeados */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra suave */
+            padding: 2rem; /* Espaciado interno */
+            margin-bottom: 2rem; /* Margen inferior */
+        }
+        /* Estilo para la sección de cabecera (hero) */
+        .hero-section {
+            background: linear-gradient(to right, #001F3F, #006A4E); /* Degradado de colores */
+            color: white; /* Texto blanco */
+            padding: 4rem 0; /* Espaciado interno */
+            text-align: center; /* Centra el texto */
+            border-bottom-left-radius: 2rem; /* Bordes inferiores redondeados */
+            border-bottom-right-radius: 2rem; /* Bordes inferiores redondeados */
+        }
+        /* Título principal de la sección hero */
+        .hero-title {
+            font-size: 3.5rem; /* Tamaño de fuente grande */
+            font-weight: 800; /* Extra negrita */
+            margin-bottom: 1rem; /* Margen inferior */
+            line-height: 1.2; /* Altura de línea */
+        }
+        /* Subtítulo de la sección hero */
+        .hero-subtitle {
+            font-size: 1.5rem; /* Tamaño de fuente */
+            font-weight: 300; /* Ligero */
+            margin-bottom: 2rem; /* Margen inferior */
+        }
+        /* Estilo para cada miembro del equipo */
+        .team-member {
+            text-align: center; /* Centra el texto */
+            margin-bottom: 1.5rem; /* Margen inferior */
+        }
+        /* Nombre del miembro del equipo */
+        .team-member-name {
+            font-weight: 600; /* Semi-negrita */
+            font-size: 1.25rem; /* Tamaño de fuente */
+            color: #2d3748; /* Color de texto */
+        }
+        /* Rol del miembro del equipo */
+        .team-member-role {
+            font-size: 1rem; /* Tamaño de fuente */
+            color: #4a5568; /* Color de texto */
+        }
+        /* Estilo para los elementos de lista con ícono */
+        .list-item {
+            display: flex; /* Usa flexbox para alinear el ícono y el texto */
+            align-items: flex-start; /* Alinea los elementos al inicio */
+            margin-bottom: 1rem; /* Margen inferior */
+        }
+        /* Estilo para los íconos SVG dentro de los elementos de lista */
+        .list-item svg {
+            flex-shrink: 0; /* Evita que el ícono se encoja */
+            margin-right: 0.75rem; /* Margen a la derecha del ícono */
+            color: #4299e1; /* Color del ícono */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">SENDA INTELIGENTE</h1>
+            <p class="hero-subtitle">Una herramienta que orienta tu andar y transforma tu vida</p>
+            <div class="text-lg font-medium">
+            </div>
+        </div>
+    </header>
+    <main class="container">
+
+        <!-- Sección ¿Quiénes Somos? -->
+        <section id="quienes-somos" class="py-12">
+            <h2 class="section-title">¿Quiénes Somos?</h2>
+            <div class="card text-center">
+                <p class="text-lg leading-relaxed">Somos una empresa que busca contribuir en el campo de los dispositivos tecnológicos asistidos accesibles para personas con discapacidad. Nos centramos en mejorar la calidad de vida de estas personas a través de tecnología asistida.</p>
+                <h3 class="text-xl font-semibold mt-6 mb-4 text-center">Nuestro Equipo</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="team-member">
+                        <p class="team-member-name">Melissa Chisaba</p>
+                        <p class="team-member-role">Gerente Administrativa</p>
+                    </div>
+                    <div class="team-member">
+                        <p class="team-member-name">Ángel Ríos</p>
+                        <p class="team-member-role">Ejecutivo de Finanzas y Gestor de Unidades de Negocios</p>
+                    </div>
+                    <div class="team-member">
+                        <p class="team-member-name">Katlyn Cubillos</p>
+                        <p class="team-member-role">Marketing y Ventas / Recursos Humanos</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección ¿Por qué este proyecto? -->
+        <section id="por-que-proyecto" class="py-12">
+            <h2 class="section-title">¿Por qué nació Senda Inteligente?</h2>
+            <div class="card">
+                <p class="text-lg leading-relaxed mb-4">Los bastones inteligentes para personas con discapacidad visual son una herramienta esencial para mejorar la movilidad y seguridad en su día a día. A través de sensores y tecnología avanzada, estos bastones no solo detectan obstáculos, sino que también ayudan a orientarse en el entorno, proporcionando mayor autonomía.</p>
+                <p class="text-lg leading-relaxed mb-4">Además, ofrecen una sensación de confianza y libertad, reduciendo la dependencia de otros. Elaborar bastones inteligentes no es solo un avance tecnológico, sino un paso hacia una sociedad más inclusiva, donde todos puedan caminar con seguridad y sin barreras.</p>
+            </div>
+        </section>
+
+        <!-- Sección Bastón Inteligente (Descripción del producto) -->
+        <section id="baston-inteligente" class="py-12">
+            <h2 class="section-title">Bastón Inteligente</h2>
+            <div class="card">
+                <p class="text-lg leading-relaxed mb-4">El bastón inteligente para personas con discapacidad visual es una herramienta diseñada para mejorar la movilidad y autonomía de las personas con discapacidad visual. A diferencia de un bastón tradicional, este dispositivo incorpora tecnología avanzada, como sensores y sistemas de navegación, para detectar obstáculos, medir distancias y alertar al usuario sobre posibles peligros mediante vibraciones o sonidos.</p>
+                <p class="text-lg leading-relaxed">Además, algunos modelos incluyen conexión a aplicaciones móviles, lo que permite ofrecer información adicional sobre el entorno, como rutas o puntos de interés. Este bastón no solo facilita la orientación, sino que también brinda mayor seguridad y confianza a quienes lo usan, ayudándoles a moverse de manera más independiente y eficiente.</p>
+            </div>
+        </section>
+
+        <!-- Sección Senda Inteligente (Nombre del proyecto) -->
+        <section id="nombre-proyecto" class="py-12">
+            <h2 class="section-title">¿Senda Inteligente?</h2>
+            <div class="card">
+                <p class="text-lg leading-relaxed mb-4">El nombre "Senda Inteligente" se elige porque refleja la idea de un camino más seguro y accesible para las personas con discapacidad visual. "Senda" hace referencia al trayecto que alguien sigue, y en este caso, se convierte en un camino guiado por tecnología avanzada que ayuda a la persona a orientarse.</p>
+                <p class="text-lg leading-relaxed">"Inteligente" resalta la capacidad del bastón para adaptarse al entorno, detectar obstáculos y ofrecer indicaciones precisas. Juntos, el nombre simboliza una ruta más clara, segura y adaptada a las necesidades de quien lo usa, mejorando su autonomía y confianza al moverse por el mundo.</p>
+                <div class="flex justify-center mt-6">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Objetivos -->
+        <section id="objetivos" class="py-12">
+            <h2 class="section-title">Nuestros Objetivos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-blue-700">Objetivos Generales</h3>
+                    <ul class="space-y-4">
+                        <li class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span><strong>Mejorar la movilidad y seguridad:</strong> Facilitar el desplazamiento de las personas ciegas mediante tecnología que detecte obstáculos, cambios en el terreno y alertas de posibles peligros, promoviendo una mayor autonomía.</span>
+                        </li>
+                        <li class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span><strong>Fomentar la independencia:</strong> Proveer a las personas con discapacidad visual de una herramienta que les permita moverse con confianza y sin necesidad constante de asistencia, mejorando su calidad de vida.</span>
+                        </li>
+                        <li class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span><strong>Incorporar tecnología accesible e innovadora:</strong> Integrar tecnologías como sensores de proximidad, GPS y sistemas de navegación en los bastones, adaptados a las necesidades específicas de las personas con discapacidad visual.</span>
+                        </li>
+                        <li class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span><strong>Promover la inclusión social:</strong> Ayudar a las personas ciegas a interactuar de manera más fluida y segura en entornos urbanos, reduciendo barreras y promoviendo una mayor integración en la sociedad.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-blue-700">Objetivos Específicos</h3>
+                    <ul class="space-y-4">
+                        <li class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span><strong>Desarrollar un sistema de sensores eficientes:</strong> Crear y mejorar sensores que detecten obstáculos cercanos (como paredes, personas, y otros objetos) y alerten al usuario de manera precisa y oportuna.</span>
+                        </li>
+                        <li class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span><strong>Incorporar tecnología de navegación GPS:</strong> Integrar un sistema GPS que permita a las personas ciegas recibir indicaciones precisas de dirección, ayudándoles a orientarse mejor en entornos urbanos y desconocidos.</span>
+                        </li>
+                        <li class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span><strong>Desarrollar alertas sonoras y táctiles:</strong> Implementar alertas a través de vibraciones o sonidos para indicar diferentes tipos de obstáculos o situaciones, proporcionando una experiencia más intuitiva y accesible.</span>
+                        </li>
+                        <li class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span><strong>Optimizar la duración de la batería:</strong> Asegurar que el bastón inteligente tenga una batería de larga duración, para que los usuarios puedan utilizarlo durante el día sin la preocupación constante de recargarlo.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Planteamiento del Problema -->
+        <section id="planteamiento-problema" class="py-12">
+            <h2 class="section-title">¿Qué buscamos cambiar?</h2>
+            <div class="card">
+                <p class="text-lg leading-relaxed mb-4">Las personas con discapacidad visual enfrentan una serie de dificultades a la hora de desplazarse en espacios públicos y entornos desconocidos. Aunque los bastones tradicionales les permiten detectar obstáculos cercanos, no ofrecen la información necesaria para orientarse con precisión ni para identificar peligros en su camino, lo que genera inseguridad y limita su independencia.</p>
+                <p class="text-lg leading-relaxed mb-4">Esta situación obliga a muchas personas con discapacidad visual a depender de acompañantes o sistemas de apoyo adicionales, lo cual no solo reduce su autonomía, sino que también incrementa el riesgo de accidentes. Además, la falta de herramientas más avanzadas para la navegación y la detección de obstáculos en tiempo real dificulta la integración plena de las personas ciegas en la sociedad.</p>
+            </div>
+        </section>
+
+        <!-- Sección Misión -->
+        <section id="mision" class="py-12">
+            <h2 class="section-title"> Nuestra Misión</h2>
+            <div class="card text-center">
+                <p class="text-lg leading-relaxed">Nuestra misión es crear bastones inteligentes que brinden a las personas ciegas mayor seguridad y libertad al moverse por el mundo. Queremos que cada persona pueda caminar con confianza, sin depender de otros, gracias a la tecnología que les avise de obstáculos y les guíe de manera sencilla y accesible.</p>
+                <p class="text-lg leading-relaxed mt-4">Nos esforzamos por mejorar su calidad de vida, ayudándoles a superar barreras físicas y sociales, para que puedan disfrutar de su día a día con más independencia y menos limitaciones.</p>
+            </div>
+        </section>
+
+        <!-- Sección Visión -->
+        <section id="vision" class="py-12">
+            <h2 class="section-title"> Nuestra Visión</h2>
+            <div class="card text-center">
+                <p class="text-lg leading-relaxed">Ser una empresa comprometida con la mejora de soluciones electrónicas existentes, adaptándolas e innovándolas para aumentar la movilidad y calidad de vida de las personas con discapacidad visual.
+
+                    Nuestra visión es contribuir al desarrollo de bastones inteligentes más accesibles, seguros y eficientes, integrando tecnología actual de forma responsable para ampliar su alcance y utilidad.
+                    
+                    Buscamos un futuro donde la tecnología esté al servicio de una sociedad más inclusiva, donde cada paso esté guiado con confianza, sin barreras ni limitaciones.</p>
+            </div>
+        </section>
+
+        <!-- Sección Marco Referencial -->
+        <section id="marco-referencial" class="py-12">
+            <h2 class="section-title">Marco Referencial</h2>
+            <div class="card">
+                <p class="text-lg leading-relaxed mb-4">Las personas con discapacidad visual enfrentan desafíos significativos en su movilidad e independencia. A lo largo de la historia, se han desarrollado diversas herramientas para asistirlas, siendo el bastón blanco una de las más utilizadas. Sin embargo, los avances tecnológicos han permitido la creación de dispositivos más sofisticados, como los bastones inteligentes, que integran sensores y sistemas de navegación para mejorar la orientación y seguridad de los usuarios. Nuestro proyecto busca desarrollar un bastón inteligente que combine tecnología avanzada con un diseño accesible, ofreciendo una solución eficiente a las dificultades de movilidad de las personas con discapacidad visual.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3 text-blue-700">Clasificación y Estadísticas</h3>
+                <p class="text-lg leading-relaxed mb-4">La discapacidad visual puede clasificarse en baja visión, ceguera parcial y ceguera total. Según la Organización Mundial de la Salud (OMS), más de 285 millones de personas en el mundo presentan algún grado de discapacidad visual, de las cuales 39 millones son totalmente ciegas.</p>
+                <p class="text-lg leading-relaxed mb-4">Estas personas dependen de herramientas como bastones tradicionales, perros guía o aplicaciones móviles para desplazarse de manera segura. Sin embargo, estos métodos presentan limitaciones, como la incapacidad de detectar obstáculos a nivel superior (como ramas o señales de tránsito) o dificultades en la navegación en entornos urbanos complejos.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3 text-blue-700">Problemática Actual y Solución</h3>
+                <p class="text-lg leading-relaxed mb-4">Estudios indican que una alta proporción de personas con discapacidad visual sufren accidentes debido a obstáculos inesperados en su camino. La falta de accesibilidad en espacios públicos y la ausencia de soluciones tecnológicas asequibles agravan la problemática.</p>
+                <p class="text-lg leading-relaxed mb-4">Existen bastones inteligentes en el mercado, pero su alto costo y complejidad de uso limitan su adopción masiva. Nuestro bastón inteligente busca cerrar esta brecha, proporcionando una alternativa accesible y eficiente para mejorar la movilidad y autonomía de los usuarios.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3 text-blue-700">Consensos y Discrepancias en el Desarrollo de Tecnologías Asistivas</h3>
+                <p class="text-lg leading-relaxed mb-2"><strong>Consenso:</strong></p>
+                <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                    <li>La tecnología puede mejorar significativamente la movilidad de personas con discapacidad visual.</li>
+                    <li>Sensores ultrasónicos y vibraciones hápticas han demostrado ser efectivos para detectar obstáculos.</li>
+                    <li>La integración con asistentes de voz y GPS mejora la orientación en entornos desconocidos.</li>
+                </ul>
+                <p class="text-lg leading-relaxed mb-2"><strong>Discrepancias:</strong></p>
+                <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                    <li>Algunos estudios cuestionan la dependencia de la tecnología y la posible falta de adaptación de los usuarios a nuevos dispositivos.</li>
+                    <li>Existen debates sobre la asequibilidad de estos dispositivos y su viabilidad en países en desarrollo.</li>
+                    <li>La duración de la batería y el peso del dispositivo pueden influir en su comodidad y adopción.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3 text-blue-700">Nuestra Solución Innovadora</h3>
+                <p class="text-lg leading-relaxed mb-4">Nuestro proyecto se basa en investigaciones y tecnologías probadas, evitando afirmaciones vagas. En su lugar, tomamos como referencia estudios sobre el uso de sensores para la detección de obstáculos y dispositivos hápticos para la retroalimentación táctil.</p>
+                <p class="text-lg leading-relaxed mb-2">Además, proponemos una solución innovadora basada en:</p>
+                <ul class="list-disc list-inside ml-4 space-y-2">
+                    <li>Sensores ultrasónicos para la detección de obstáculos cercanos.</li>
+                    <li>Vibraciones en el mango para indicar la dirección y distancia de los objetos.</li>
+                    <li>Conectividad con una app móvil que proporcione información adicional y permita configuraciones personalizadas.</li>
+                </ul>
+                <p class="text-lg leading-relaxed mt-4">Este marco de referencia permite establecer una base sólida para justificar nuestro proyecto, asegurando que esté fundamentado en evidencia y contribuyendo al desarrollo de soluciones accesibles para la movilidad de personas con discapacidad visual.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container text-center">
+            <p>&copy; 2025 Senda Inteligente. Todos los derechos reservados.</p>
+            <p class="mt-2">María y asociados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
